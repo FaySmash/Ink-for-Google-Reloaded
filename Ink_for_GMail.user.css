@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for GMail
 @namespace      github.com/FaySmash
-@version        0.1.2
+@version        0.1.3
 @description    This gives GMail more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/Ink-for-Google-Reloaded
@@ -75,7 +75,7 @@
             bottom: 0;
             left: 235px;
             right: 315px;
-            margin: auto;
+            margin: auto !important;
         }
     }
     /* determines the design of the searchbox */
