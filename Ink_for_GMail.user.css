@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for GMail
 @namespace      github.com/FaySmash
-@version        0.1.4
+@version        0.1.5
 @description    This gives GMail more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/Ink-for-Google-Reloaded
@@ -19,7 +19,7 @@
         overflow: auto;
     }
     /* adding shadow and adjusting height and color of the bar at the top */
-    .gb_Xa {
+    #gb {
         background-color: primary-color !important;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
         height: 64px;
@@ -69,22 +69,22 @@
     /* ---------------------------------------------------------------------- SEARCHBOX ---------------------------------------------------------------------- */
     /* sets the position of the searchbox to be centered if sb-position = Centered */
     if sb-position==Centered {
-        .gb_Pe.gb_lf {
-            position: absolute !important;
+        #aso_search_form_anchor {
+            position: absolute;
             top: 0;
             bottom: 0;
             left: 235px;
             right: 315px;
-            margin: auto !important;
+            margin: auto;
         }
     }
     /* determines the design of the searchbox */
-    .gb_Pe {
-        border: 0!important;
-        background: hsla(0, 0%, 100%, .15) !important;
+    #aso_search_form_anchor {
+        border: 0;
+        background: hsla(0, 0%, 100%, .15);
         height: 48px;
         max-width: 650px;
-        box-shadow: none!important;
+        box-shadow: none;
         font: 400 16px/48px Roboto, Arial, sans-serif;
     }
     /* tints the typed text in secondary color */
