@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for YouTube
 @namespace      github.com/FaySmash
-@version        0.1.1
+@version        0.1.2
 @description    This gives YouTube more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/Ink-for-Google-Reloaded
@@ -92,8 +92,8 @@
     }
 
     /* sets the color of the icon of YouTube+ aka Particle aka Iridium to secondary color */
-    #iridium_settings_button path {
-        fill: secondary-color;
+    #iridium_settings_button path, #iridium_settings_button polygon {
+        fill: secondary-color !important;
     }
 
     /* set the color of the Burger Menu icon in the top right corner to secondary-color */
