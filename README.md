@@ -1,3 +1,7 @@
+Install Ink for YouTube:
+
+[![Install Ink for GMail](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/FaySmash/Ink-for-Google-Reloaded/master/Ink_for_YouTube.user.css)
+
 Install Ink for GMail:
 
 [![Install Ink for GMail](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/FaySmash/Ink-for-Google-Reloaded/master/Ink_for_GMail.user.css)
