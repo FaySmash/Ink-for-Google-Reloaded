@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for GMail
 @namespace      github.com/FaySmash
-@version        0.1.5
+@version        0.1.6
 @description    This gives GMail more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/Ink-for-Google-Reloaded
@@ -18,24 +18,28 @@
     .aeN .ajl {
         overflow: auto;
     }
-    /* adding shadow and adjusting height and color of the bar at the top */
+
+    /* sets the color, adding shadow and adjusting height of the bar at the top */
     #gb {
         background-color: primary-color !important;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
         height: 64px;
     }
+
     /* tints the GMail Logo white and moves it to the left as well as under the parent class */
     .gb_1a {
         filter: brightness(1000%);
         margin-left: -44px;
         z-index: -1;
     }
+
     /* generates a border which overlapps the GMail Logo */
     .gb_cc {
         border-left-width: 40px;
         border-left-style: solid;
         border-color: primary-color;
     }
+
     /* ---------------------------------------------------------------------- APP DRAWER ---------------------------------------------------------------------- */
     /* makes the "new Mail"  button edgy */
     .z0 > .L3,
@@ -46,14 +50,17 @@
         padding: 0;
         background: none;
     }
+
     /* makes the Background of the "new Mail" button grey when hovered */
     .aic:hover {
         background: #fafafb;
     }
+
     /* makes the App Drawer selector edgy */
     .TK .TO {
         border-radius: 0;
     }
+
     /* ---------------------------------------------------------------------- BUTTONS ---------------------------------------------------------------------- */
     /* sets the color of the icons to the secondary color and removes opacity on active search bar */
     .gb_Xa svg,
@@ -61,11 +68,13 @@
         opacity: 1.0 !important;
         fill: secondary-color;
     }
+
     /* sets the color of the notification bell */
     .gb_Kc .gb_Be {
         color: primary-color;
         background-color: secondary-color;
     }
+
     /* ---------------------------------------------------------------------- SEARCHBOX ---------------------------------------------------------------------- */
     /* sets the position of the searchbox to be centered if sb-position = Centered */
     if sb-position==Centered {
@@ -73,11 +82,12 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            left: 235px;
-            right: 315px;
+            left: 200px;
+            right: 200px;
             margin: auto;
         }
     }
+
     /* determines the design of the searchbox */
     #aso_search_form_anchor {
         border: 0;
@@ -87,6 +97,7 @@
         box-shadow: none;
         font: 400 16px/48px Roboto, Arial, sans-serif;
     }
+
     /* tints the typed text in secondary color */
     .gb_7e {
         color: secondary-color !important;
