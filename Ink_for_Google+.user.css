@@ -1,0 +1,75 @@
+/* ==UserStyle==
+@name           Ink for Google+
+@namespace      github.com/FaySmash
+@version        0.1.0
+@description    This gives Google+ more color back!
+@author         FaySmash (https://github.com/FaySmash)
+@homepageURL	https://github.com/FaySmash/
+@supportURL 	https://github.com/FaySmash/
+@license		GPL-3.0-or-later
+@preprocessor	stylus
+@var			color		primary-color		'Primary-Color'			#109D58
+@var			color		secondary-color		'Secondary Color'		#FFFFFF
+@var			select		sb-position			'Searchbox Position'	["Left","Centered"]
+==/UserStyle== */
+@-moz-document domain("plus.google.com") {
+    /* ---------------------------------------------------------------------- TOP BAR ---------------------------------------------------------------------- */
+    /* sets the color of the bar at the top */
+    .XS1fT {
+        background: primary-color !important;
+    }
+
+    /* replaces the grey Google+ Logo with the white one */
+    .xdjHt.FYQzvb,
+    .xdjHt.FYQzvb,
+    .xdjHt.FYQzvb.ex5ZEb {
+        background-image: url('https://ssl.gstatic.com/images/branding/lockups/2x/lockup_gplus_light_color_88x24dp.png');
+        opacity: 1.0;
+    }
+
+    /* ---------------------------------------------------------------------- BUTTONS ---------------------------------------------------------------------- */
+    /* sets the color of various Top Bar elements/icons to secondary color */
+    .s49ete .DPvwYc,
+    .s49ete .Ww5CL {
+        color: secondary-color !important;
+    }
+
+    /* sets the color of the burger menu to secondary color */
+    .s49ete .XS1fT path {
+        fill: secondary-color;
+    }
+
+    /* sets the Notification bell */
+    .gb_Rc {
+        background-position: 0 -2323px !important;
+        background-color: secondary-color;
+    }
+
+    /* sets the Apps Icon */
+    .gb_da .gb_b {
+        background-position: -35px -1317px;
+        opacity: 1.0;
+    }
+
+    /* ---------------------------------------------------------------------- SEARCHBOX ---------------------------------------------------------------------- */
+    /* sets the position of the searchbox to be centered if sb-position = Centered */
+    if sb-position==Centered {
+        .f81Q3b {
+            position: absolute;
+            left: 300px;
+            right: 200px;
+            margin: auto;
+        }
+    }
+
+    /* changes back the grey color for search hint arrows */
+    .Lu8OLe.Kwip7e .GzH2Fc {
+        color: #676767 !important;
+    }
+
+    /* tints the typed text in secondary color */
+    .VOEIyf .ZAGvjd {
+        color: secondary-color !important;
+        -webkit-text-fill-color: secondary-color;
+    }
+}
