@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for YouTube
 @namespace      github.com/FaySmash
-@version        0.1.2
+@version        0.1.3
 @description    This gives YouTube more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/Ink-for-Google-Reloaded
@@ -10,6 +10,7 @@
 @preprocessor	stylus
 @var			color		primary-color		'Primary Color'			#D91D1B
 @var			color		secondary-color		'Secondary Color'		#FFFFFF
+@var			color		secondary-color2	'Secondary Color 2'		#D91D1B
 @var			select		adaptive-color		'Adaptive Color'		["Fixed", "Adaptive"]
 @var			checkbox	menu-button			'Menu Button'			1
 ==/UserStyle== */
@@ -25,6 +26,11 @@
         background-color: primary-color !important;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
         height: 64px;
+    }
+
+    /* Top Progress Bar */
+    #progress.yt-page-navigation-progress {
+        background-color: darken(primary-color, 25%);
     }
 
     /* sets the color of the country ID to secondary color */
@@ -92,7 +98,8 @@
     }
 
     /* sets the color of the icon of YouTube+ aka Particle aka Iridium to secondary color */
-    #iridium_settings_button path, #iridium_settings_button polygon {
+    #iridium_settings_button path,
+    #iridium_settings_button polygon {
         fill: secondary-color !important;
     }
 
@@ -117,37 +124,37 @@
     /* ---------------------------------------------------------------------- OTHER BUTTONS ---------------------------------------------------------------------- */
     /* APP DRAWER active Button */
     ytd-guide-entry-renderer[active] .guide-icon.ytd-guide-entry-renderer {
-        color: primary-color !important;
+        color: secondary-color2 !important;
     }
 
     /* Thumbnail Progressbar */
     #progress.ytd-thumbnail-overlay-resume-playback-renderer {
-        background: primary-color;
+        background: secondary-color2;
     }
 
     /* Video Progressbar */
     .ytp-progress-bar .ytp-progress-list .ytp-play-progress.ytp-swatch-background-color {
-        background: primary-color;
+        background: secondary-color2;
     }
 
     /* Video Progressbar Cursor Button */
     .ytp-progress-bar .ytp-scrubber-button {
-        background: primary-color;
+        background: secondary-color2;
     }
 
     /* Buttons for Live Streams */
     .badge.badge-style-type-live-now {
-        color: primary-color;
-        border: 1px solid primary-color !important;
+        color: secondary-color2;
+        border: 1px solid secondary-color2 !important;
     }
 
     .badge-style-type-live-now.ytd-badge-supported-renderer {
-        border: 1px solid primary-color !important;
+        border: 1px solid secondary-color2 !important;
     }
 
     /* Live Badge */
     .ytp-live-badge.ytp-button::before {
-        background: primary-color !important;
+        background: secondary-color2 !important;
     }
 
     /* Resolution Settings Badge */
@@ -155,51 +162,46 @@
     .ytp-settings-button.ytp-4k-quality-badge::after,
     .ytp-settings-button.ytp-5k-quality-badge::after,
     .ytp-settings-button.ytp-8k-quality-badge::after {
-        background-color: primary-color;
+        background-color: secondary-color2;
     }
 
     /* Subtitle Button unterline */
     .ytp-chrome-controls .ytp-button[aria-pressed]::after {
-        background: primary-color;
+        background: secondary-color2;
     }
 
     /* Alert Render */
     .INFO.ytd-alert-renderer {
-        background-color: primary-color !important;
-    }
-
-    /* Top Progress Bar */
-    #progress.yt-page-navigation-progress {
-        background-color: darken(primary-color, 25%);
+        background-color: secondary-color2 !important;
     }
 
     /* Subscribe Button */
     ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]) {
-        background-color: primary-color;
+        background-color: secondary-color2;
     }
 
     /* Watch Card */
     #watch-card-header.ytd-generic-watch-card {
-        background: primary-color !important;
+        background: secondary-color2 !important;
     }
 
     #img-endpoint.ytd-watch-card-collage-renderer #overlay-button.ytd-watch-card-collage-renderer {
-        background: primary-color !important;
+        background: secondary-color2 !important;
     }
 
     paper-tab.iron-selected.ytd-generic-watch-card {
-        color: primary-color !important;
+        color: secondary-color2 !important;
     }
 
     #selectionBar {
-        background: primary-color !important
+        background: secondary-color2 !important
     }
 
     /* Brand Color */
     *:not([style-scope]):not(.style-scope) {
-        --yt-brand-paper-button-color: primary-color !important;
-        --yt-brand-color: 1px solid primary-color !important;
-        --paper-tabs-selection-bar-color: primary-color !important;
+        --yt-brand-paper-button-color: secondary-color2 !important;
+        --yt-brand-color: 1px solid secondary-color2 !important;
+        --paper-tabs-selection-bar-color: secondary-color2 !important;
     }
 
     /* ---------------------------------------------------------------------- SEARCHBOX ---------------------------------------------------------------------- */
