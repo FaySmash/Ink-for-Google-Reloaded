@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for GMail
 @namespace      github.com/FaySmash
-@version        0.1.6
+@version        0.1.7
 @description    This gives GMail more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/Ink-for-Google-Reloaded
@@ -80,8 +80,6 @@
     if sb-position==Centered {
         #aso_search_form_anchor {
             position: absolute;
-            top: 0;
-            bottom: 0;
             left: 200px;
             right: 200px;
             margin: auto;
