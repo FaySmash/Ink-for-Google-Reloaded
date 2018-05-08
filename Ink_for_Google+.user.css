@@ -1,24 +1,20 @@
 /* ==UserStyle==
 @name           Ink for Google+
 @namespace      github.com/FaySmash
-@version        0.1.1
+@version        0.1.2
 @description    This gives Google+ more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/
 @supportURL 	https://github.com/FaySmash/
 @license		GPL-3.0-or-later
 @preprocessor	stylus
-@var			color		primary-color		'Primary-Color'			#109D58
+@var			color		primary-color		'Primary-Color'			#DB4437
 @var			color		secondary-color		'Secondary Color'		#FFFFFF
 @var			select		sb-position			'Searchbox Position'	["Left","Centered"]
+@var			checkbox	uncolored   		'uncolored Communities'	1
 ==/UserStyle== */
 @-moz-document domain("plus.google.com") {
     /* ---------------------------------------------------------------------- TOP BAR ---------------------------------------------------------------------- */
-    /* sets the color of the bar at the top */
-    .XS1fT {
-        background: primary-color !important;
-    }
-
     /* replaces the grey Google+ Logo with the white one */
     .xdjHt.FYQzvb,
     .xdjHt.FYQzvb,
@@ -69,6 +65,11 @@
         }
     }
 
+    /* sets the opacity of the searchbox */
+    .Or9bCd .EPPZeb {
+        background: rgba(255, 255, 255, .15);
+    }
+
     /* changes back the grey color for search hint arrows */
     .Lu8OLe.Kwip7e .GzH2Fc {
         color: #676767 !important;
@@ -78,5 +79,23 @@
     .VOEIyf .ZAGvjd {
         color: secondary-color !important;
         -webkit-text-fill-color: secondary-color;
+    }
+}
+
+if uncolored==1 {
+    @-moz-document regexp("https?:\\/\\/(plus\\.)?google\\.com\\/(?!communities).*") {
+        /* sets the color of the bar at the top, except for /communities */
+        .XS1fT {
+            background: primary-color !important;
+        }
+    }
+}
+
+else {
+    @-moz-document domain("plus.google.com") {
+        /* sets the color of the bar at the top */
+        .XS1fT {
+            background: primary-color;
+        }
     }
 }
