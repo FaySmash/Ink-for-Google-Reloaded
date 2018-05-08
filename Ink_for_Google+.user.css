@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for Google+
 @namespace      github.com/FaySmash
-@version        0.1.2
+@version        0.1.3
 @description    This gives Google+ more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/
@@ -26,19 +26,22 @@
     /* ---------------------------------------------------------------------- BUTTONS ---------------------------------------------------------------------- */
     /* sets the color of various Top Bar elements/icons to secondary color */
     .s49ete .DPvwYc,
-    .s49ete .Ww5CL {
+    .s49ete .Ww5CL,
+    .f81Q3b .yuvn1,
+    .Ww5CL {
         color: secondary-color !important;
     }
 
     /* sets the color of the burger menu to secondary color */
-    .s49ete .XS1fT path {
+    .s49ete .XS1fT path,
+    .XS1fT path {
         fill: secondary-color;
     }
 
     /* sets the Notification bell image and color */
     .gb_Rc {
         background-position: 0 -2323px !important;
-        background-color: secondary-color;
+        background-color: secondary-color !important;
     }
 
     /* sets the Notification bell color when hovered and active and lowers the opacity */
