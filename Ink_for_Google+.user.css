@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for Google+
 @namespace      github.com/FaySmash
-@version        0.1.4
+@version        0.1.5
 @description    This gives Google+ more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/
@@ -52,7 +52,7 @@
     }
 
     /* sets the Notification bell background and number color when a Notification was received */
-    .gb_Rc {
+    .gb_Rc, .gb_Mc .gb_Tc.gb_Tc {
         background-color: secondary-color !important;
         color: rgba(0, 0, 0, 0.87) !important;
     }
