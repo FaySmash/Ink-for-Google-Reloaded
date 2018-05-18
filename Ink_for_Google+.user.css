@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for Google+
 @namespace      github.com/FaySmash
-@version        0.1.5
+@version        0.1.6
 @description    This gives Google+ more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/
@@ -28,6 +28,8 @@
     .s49ete .DPvwYc,
     .s49ete .Ww5CL,
     .f81Q3b .yuvn1,
+    .s49ete .FGhx7c,
+    .C0oVfc .RveJvd,
     .Ww5CL {
         color: secondary-color !important;
     }
@@ -39,20 +41,21 @@
     }
 
     /* sets the Notification bell image and background color */
-    .gb_Rc.gb_Sc {
+    .gb_Rc.gb_Sc,
+    .gb_Tc.gb_Uc {
         background-position: 0 -2323px !important;
         background-color: secondary-color !important;
     }
 
-    /* sets the Notification bell color when hovered and active and lowers the opacity */
-    .gb_b:hover .gb_Rc,
-    .gb_b:focus .gb_Rc {
-        background-color: secondary-color;
+    /* lowers the Notification bell opacity when hovered */
+    gb_Rc.gb_Sc:hover,
+    .gb_Tc.gb_Uc:hover {
         opacity: 0.85;
     }
 
     /* sets the Notification bell background and number color when a Notification was received */
-    .gb_Rc, .gb_Mc .gb_Tc.gb_Tc {
+    .gb_Rc,
+    .gb_Mc .gb_Tc.gb_Tc {
         background-color: secondary-color !important;
         color: rgba(0, 0, 0, 0.87) !important;
     }
