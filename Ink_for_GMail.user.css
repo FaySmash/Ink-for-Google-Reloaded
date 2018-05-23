@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for GMail
 @namespace      github.com/FaySmash
-@version        0.1.7
+@version        0.1.8
 @description    This gives GMail more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/Ink-for-Google-Reloaded
@@ -97,7 +97,7 @@
     }
 
     /* tints the typed text in secondary color */
-    .gb_7e {
+    .gb_9e {
         color: secondary-color !important;
         -webkit-text-fill-color: secondary-color
     }
