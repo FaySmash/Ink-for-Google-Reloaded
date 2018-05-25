@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Ink for YouTube
 @namespace      github.com/FaySmash
-@version        0.1.5
+@version        0.1.6
 @description    This gives YouTube more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/Ink-for-Google-Reloaded
@@ -13,6 +13,7 @@
 @var			color		secondary-color2	'Secondary Color 2'		#D91D1B
 @var			select		adaptive-color		'Adaptive Color'		["Fixed", "Adaptive"]
 @var			checkbox	menu-button			'Menu Button'			1
+@var			checkbox	message-button		'Message Button'			1
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
     /* ---------------------------------------------------------------------- TOP BAR ---------------------------------------------------------------------- */
@@ -111,6 +112,13 @@
     /* toggle if the menu button should be visible  */
     ytd-topbar-menu-button-renderer.style-scope:nth-child(2) {
         if menu-button==0 {
+            display: none !important;
+        }
+    }
+
+    /* toggle if the message button should be visible  */
+    ytd-notification-topbar-button-renderer.style-scope:nth-child(3) {
+        if message-button==0 {
             display: none !important;
         }
     }
