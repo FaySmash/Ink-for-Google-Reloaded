@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Ink for Google Drive
 @namespace      github.com/FaySmash
-@version        0.1.0
+@version        0.1.1
 @description    This gives Google Drive more color back!
 @author         FaySmash (https://github.com/FaySmash)
 @homepageURL	https://github.com/FaySmash/Ink-for-Google-Reloaded
 @supportURL 	https://github.com/FaySmash/Ink-for-Google-Reloaded/issues
 @license		GPL-3.0-or-later
 @preprocessor	stylus
-@var			color		primary-color		'Primary-Color'			#8F8F8F
+@var			color		primary-color		'Primary-Color'			#607D8B
 @var			color		secondary-color		'Secondary Color'		#FFFFFF
 @var			select		sb-position			'Searchbox Position'	["Left","Centered"]
 ==/UserStyle== */
